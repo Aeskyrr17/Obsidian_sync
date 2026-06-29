@@ -18,5 +18,8 @@ views:
       - status
       - type
       - domain
+    sort: []
+    columnSize:
+      note.status: 150
   - type: cards
     name: 视图
