@@ -1,0 +1,21 @@
+filters:
+  and:
+    - note["status"] == "inbox"
+properties:
+  file.name:
+    displayName: Name
+  status:
+    displayName: Status
+  type:
+    displayName: Type
+  domain:
+    displayName: Domain
+views:
+  - type: table
+    name: Inbox Notes
+    order:
+      - file.name
+      - status
+      - type
+      - domain
+

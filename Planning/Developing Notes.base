@@ -1,0 +1,20 @@
+filters:
+  and:
+    - note["status"] == "developing"
+properties:
+  file.name:
+    displayName: Name
+  status:
+    displayName: Status
+  type:
+    displayName: Type
+  domain:
+    displayName: Domain
+views:
+  - type: table
+    name: Developing Notes
+    order:
+      - file.name
+      - status
+      - type
+      - domain

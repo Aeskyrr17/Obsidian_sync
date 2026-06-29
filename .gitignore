@@ -1,0 +1,29 @@
+# Obsidian local workspace state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+
+# Obsidian plugin code/data can contain bundled tokens or local settings
+.obsidian/plugins/
+
+# Obsidian local trash
+.trash/
+
+# Local AI / assistant state
+.claude/
+.claudian/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / temp files
+*.tmp
+*.temp
+*.swp
+*.bak
+~$*
+
+# Logs
+*.log

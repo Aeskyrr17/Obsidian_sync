@@ -1,0 +1,93 @@
+C
+### 代码层面
+
+1. 能够正常init，返回is_connected
+2. Tasksensor读到rawresult是0
+3. ```cpp
+   while(HAL_GPIO_ReadPin(adsParam->drdyPort, adsParam->drdyPin) == GPIO_PIN_SET)
+   ```
+   不会卡在这里，也许说明读到了DRDY的低电平状态。（会在程序刚开始的时候卡一会）
+4. SPI_receive返回HAL_OK
+5. 读register 0-3, 全部都是255 （0xFF）
+
+### 硬件排查
+
+1. CLK正常
+2. 通过CLK抓MOSI的波形，似乎发的一直是1
+	1. 0000 1000
+		![[6f338a2da00ba1c798e25b1e2f5da7d5.jpg|409]]
+	2. 代码在每一次发送 读命令之前 都会发一次start，值是0
+	3. 没有抓到过别的值。（待排查）
+
+### 3.25&3.26
+
+- spi配置
+    
+    - [x] data size 8bit
+    - [x] prescalar调小一点
+    - [x] CPOL：LOW
+    - [x] CPHA：2Edge
+    - [x] NSSP Mode：Enabled
+![[Pasted image 20260331125202.png|357]]
+- gpio配置
+    - 全部浮空，speed:very high
+![[Pasted image 20260331125228.png|418]]
+#### 测试
+
+#####  把PC11换成GPIO_output并while1 发 reset&set的方波
+
+1. 在喵版→ 引出来的拓展口接示波器，可以看到方波
+2. 接上PCB之后，始终为高电平
+    1. 直接一直output set/reset, 都一直是3.3V
+
+##### 正常spi模式下，使用HAL_SPI_TransmitReceive()
+
+1. PC11给浮空，读到的registervalue在0&255跳
+2. 给Pull-up，registervalue = 255
+3. 给Pull-down， registervalue = 0；
+
+##### 把PC11换成GPIO_EXIT，同时spi换成Master transmit Only
+
+有进行ads的init初始化（但不确定是否能够成功）
+
+在循环中一直read register
+
+1. 浮空，进两次中断（像上电抖动造成的，都是在一开始进中断回调）
+2. Pull-Up，不进中断回调
+3. Pull-down, 不进中断回调
+---
+
+- 需要确定的东西
+
+1. 给芯片供电后如果什么都不发，DOUT/DRDY引脚应该是什么状态？
+2. 无论transmit的数据是否对，只要有CLK，ADS就应该会移数据出来
+3. 读regster不需要等待DRDY信号，因为数据直接跟在命令后的dummy byte上
+4. stm的引脚如果和ads的DOUT/DRDY输出相反的电平，实际观测到的应该是谁？
+
+
+### 3.31
+- readregister使用
+	1. HAL_SPI_Transmit(adsParam->adsSpi, &cmd, 1, 500);
+    HAL_SPI_TransmitReceive(adsParam->adsSpi, &dummy, &value, 1, 500);
+	2. 发两个dummy，？？
+	3. 
+
+5V ->3.0V
+- 1.48mV差分
+
+
+#### 查阅到的一些文章
+[ADS124S08高精度数据采集系统实战：从寄存器配置到SPI驱动解析-CSDN博客](https://blog.csdn.net/weixin_33728268/article/details/159870394)
+[STM32H7实战：手把手教你驱动ADS124S08高精度ADC（附完整源码与电路图）-CSDN博客](https://blog.csdn.net/weixin_30919429/article/details/159660243?ops_request_misc=&request_id=&biz_id=102&utm_term=ads%20stm32&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-159660243.142^v102^pc_search_result_base2&spm=1018.2226.3001.4187)
+- 为什么要下拉？
+- 命令读取![[Pasted image 20260406150034.png]]
+- ![[Pasted image 20260406150131.png]]
+## 目前方案
+1. ds1120
+	1. 其实有极大可能就算调通了，数据也并不精确
+		1. pcb走线问题，集成到一块板子上的话有一点难
+		2. [Common Documentation](https://www.ti.com.cn/cn/lit/df/tidrl55/tidrl55.pdf?ts=1775460437479&ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fcn%252Freference-designs%252Findex.html)这里有一个ti官方的模块示例
+2. ads1256
+	1. 30khz，24bit
+3. 变送器
+	1. 频率问题，现在实测程序只能稳定跑500Hz

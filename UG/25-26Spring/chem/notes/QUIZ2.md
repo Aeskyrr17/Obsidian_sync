@@ -1,0 +1,125 @@
+## vocabulary
+- ore 矿石
+- elemental forms 单质形式
+- polymer 聚合物/高分子 
+	- poly- 多； -mer  = uint 单元
+- condensation polymer 缩合聚合物； monomers 单体
+	- functional groups官能团
+		- COOH：carboxyl group
+		- OH：hydroxyl group
+		- NH2：amino group
+- addition polymer 加成聚合物
+	- polyethylene 聚乙烯
+- electroplating 电镀
+	- cathode 阴极
+	- anode 阳极
+		1. 电解池/电镀：阳极-e-氧化，阴极+e-还原
+- anodizing 阳极氧化
+- electrolytic 电解 electrolysis ( - lysis = breaking down分解)
+	- non_spontaneous reaction非自发
+	- electrolytic refining 电解精炼
+		- 不纯金属放阳极
+- galvanic cell/ voltaic cell 原电池
+- alkaline 碱性的
+	- alkaline battery碱性电池
+- irreversible 不可逆的/一次性的
+	- primary battery 一次电池
+- molten state 熔融状态下
+	- dissolved in water
+- steel 钢
+- ductile易于延展的 ductility延展性
+- brittle/ brittleness 脆
+- cation/anion 阳离子/阴离子
+- oxidizer 氧化剂
+- fuel cells 燃料电池
+- solvents溶剂
+	- polar & non-polar
+	- readily soluble 容易溶解的
+- alloy 合金
+- group1 metal/ alkali metal 
+	- lithium Li
+	- sodium Na
+	- potassium K
+	- rubidium Rb
+	- cesium/caesium Cs
+- alkaline earth metals 碱土金属 group2
+- metal extraction
+	- hydrometallurgy 湿法 hydro- 能耗最低
+	- electrometallurgy 
+	- pyrometallurgy pyro- = fire/high temp 高温
+- bronze 青铜 = copper + tin（Sn）铜锡合金
+- brass 黄铜 = copper + zinc （Zn） 铜锌
+- stainless steel 不锈钢 = iron + chromium （Cr） + carbon （+nickel（Ni））
+	- stainless 不易生锈
+- Titanium Alloy 钛合金
+- cellulose 纤维素
+- Nucleic 核酸
+- glycogen 糖原
+- polysaccharides多糖
+- Sodium **bicarbonate** NaHCO3
+- Potassium perchlorate 高氯酸钾
+- Magnesium oxide 氧化镁
+- Lithium chloride 氯化锂
+- Hydrochloric acid 盐酸
+- Carbon tetrachloride 四氯化碳
+- Ethanol 乙醇
+- smelting process 金属的冶炼/熔炼
+- fractional distillation 分馏
+- **aqueous** = in water，在水中
+- bicarbonate 碳酸氢根
+- radical reaction 链式反应 某些灭火剂，比如干粉灭火剂，可以干扰燃烧中的 **free radicals 自由基**，中断链式反应。
+- valence electrons 价电子
+- bitumen（asphalt）沥青/柏油
+- cosmetics化妆品
+- electronegaticity 电负性（electro+negativity）
+## tips
+1. lithium-ion batteries 锂离子电池
+	1. 不是lithium metal（这里指Li单质）
+	2. 锂离子电池的anode/negative electrode是石墨 graphite，锂离子在石墨层间
+2. lithium是密度最小的金属
+3. 烟花颜色通常由金属盐提供。  
+	- **strontium salts** 锶盐：red
+	- **barium salts** 钡盐：green
+	- **copper salts** 铜盐：blue
+	- **sodium salts** 钠盐：yellow
+	- **calcium salts** 钙盐：orange
+- metal 灭火不能用CO2/water/foam（也有water）
+- fuel cell
+	- electorlyte usually solid
+- room temp下conductivity最好的是Ag >Cu
+- lead-acid battery铅酸电池
+	- 常用于car battery backup power UPS电源
+	- 成本较低
+	- sulfuric acid硫酸 作为 liquid electrolyte电解液
+- The ability of a metal to be hammered into thin **sheets**： malleability 展性（gold）
+- The ability of a metal to be drawn into thin **wires**：ductility eg.copper
+- The ability of a metal to **resist deformation**; hardness
+- The ability of a metal to r**esist corrosion**: corrosion resistance
+- luster：光泽
+- Alkaline zinc-manganese dioxide battery： 常见一次电池
+- Carbon-zinc battery： 常见一次电池
+- Silver-oxide battery:  常用于纽扣电池
+- Nickel metal hydride battery:  rechargeble
+- PE 聚乙烯 poly-ethylene
+- PP聚丙烯 poly-propylene
+- PET poly-ester 对苯二甲酸和乙二醇，ester bond酯键连接：condensation polymer
+- PS poly-styrene 苯乙烯
+- PVC poly-vinyl chloride 氯乙烯
+- PLA poly-lactic acid 聚乳酸
+- Nylon 尼龙 condensation polymer
+- Peptide bond formation 肽键的形成
+- Calcium Ca；Potassium K ；人体中Ca最多
+-  **Froth flotation泡沫浮选**主要是物理/表面性质分离方法。
+- firework
+	- Charcoal powder 木炭粉
+	- Potassium nitrate 硝酸钾
+- Electrolyte 电解液
+- Positive electrode
+- Diaphragm 隔膜
+- Negative electrode
+- ores
+	- magnetite 磁铁矿
+	- Hematite 赤铁矿
+	- pyrite 黄铁矿 FeS2
+	- bauxite 铝土矿
+- 

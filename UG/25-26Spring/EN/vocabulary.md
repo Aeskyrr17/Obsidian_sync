@@ -1,0 +1,4 @@
+- marginalized 边缘化的
+- inherent 
+	- The inherent quality of sth is the necessary and natural part of it.
+- 
