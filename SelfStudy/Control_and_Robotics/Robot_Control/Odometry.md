@@ -35,5 +35,5 @@ $$
 ## Related
 
 - [[SelfStudy/Control_and_Robotics/Kalman Filter]]
-- [[SelfStudy/Control_and_Robotics/Robot_Control/拓展卡尔曼]]
+- [[拓展卡尔曼EKF]]
 - [[SelfStudy/Control_and_Robotics/Control and Robotics]]

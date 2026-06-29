@@ -18,3 +18,5 @@ views:
       - status
       - type
       - domain
+  - type: cards
+    name: 视图

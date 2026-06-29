@@ -17,7 +17,7 @@ status: developing
 ### State Estimation
 
 - [[SelfStudy/Control_and_Robotics/Robot_Control/Odometry]]
-- [[SelfStudy/Control_and_Robotics/Robot_Control/拓展卡尔曼]]
+- [[拓展卡尔曼EKF]]
 - [[SelfStudy/Control_and_Robotics/Kalman Filter]]
 
 ### Modeling and Mechanics

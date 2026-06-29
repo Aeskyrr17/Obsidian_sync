@@ -56,4 +56,3 @@ status: stable
 - check active MOCs
 - mark finished courses/projects as archived
 - check empty concept pages
-

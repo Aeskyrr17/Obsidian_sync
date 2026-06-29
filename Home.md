@@ -32,9 +32,12 @@ status: developing
 - [[Research/Reading/00_How_to_Read_a_Paper]]
 - [[Research/Labs_and_Professors/00_Candidate_List]]
 
+## System
+
+- [[Vault Convention]]
+
 ## Planning
 
-- [[Planning/Vault Convention]]
 - [[Planning/2026_Summer/Weekly_Review]]
 - [[Planning/2026_Summer/Parking_Lot]]
 - [[Planning/Major_Exploration/00_Major_Comparison]]

@@ -18,7 +18,7 @@ Kalman Filter 用“预测 + 观测修正”的方式，在有噪声的系统中
 
 ## 相关笔记
 
-- [[SelfStudy/Control_and_Robotics/Robot_Control/拓展卡尔曼]]
+- [[拓展卡尔曼EKF]]
 - [[SelfStudy/Control_and_Robotics/Robot_Control/Odometry]]
 - [[SelfStudy/Control_and_Robotics/Control and Robotics]]
 
