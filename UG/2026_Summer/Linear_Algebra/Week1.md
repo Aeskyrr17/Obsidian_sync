@@ -1,5 +1,8 @@
 ---
-
+type: note
+course: Linear Algebra
+status: stable
+domain: UG
 ---
 
 # 总框架
