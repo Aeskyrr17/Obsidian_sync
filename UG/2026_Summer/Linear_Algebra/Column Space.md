@@ -22,7 +22,7 @@ Column Space 是矩阵所有列向量张成的空间，也就是所有可能的 
 - [[UG/2026_Summer/Linear_Algebra/00_Course_Map]]
 - [[UG/2026_Summer/Linear_Algebra/Week1]]
 - [[UG/2026_Summer/Linear_Algebra/00_questions]]
-
+- [[MIT1806 Lec12 Note]]
 ## 待补充
 
 - 从 Week1 中提取 column space、pivot、span 的最小关系图。
