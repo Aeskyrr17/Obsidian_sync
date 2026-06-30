@@ -38,7 +38,7 @@ https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/
 ### Core Concepts
 
 - [[UG/2026_Summer/Linear_Algebra/Column Space]]
-- [[UG/2026_Summer/Linear_Algebra/Week1]]
+- [[Week1]]
 
 ### Questions
 

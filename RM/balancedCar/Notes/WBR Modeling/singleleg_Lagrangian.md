@@ -1,6 +1,8 @@
 ---
 share_link: https://share.note.sx/3uk97pzp#MUDmYsAHTbt/8dbVfrwjdA
 share_updated: 2026-06-26T00:20:37+08:00
+type: note
+status: stable
 ---
 # 目录
 

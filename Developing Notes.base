@@ -18,8 +18,11 @@ views:
       - status
       - type
       - domain
-    sort: []
+    sort:
+      - property: type
+        direction: ASC
     columnSize:
+      file.name: 200
       note.status: 150
   - type: cards
     name: 视图

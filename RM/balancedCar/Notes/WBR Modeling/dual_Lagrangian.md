@@ -1,3 +1,8 @@
+---
+status: developing
+type: note
+domain: RM
+---
 
 # 广义坐标
 $$
